@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop", "FirstWebApp\OnlineShop.csproj", "{5A619867-364C-4980-83BA-3A7234790ED3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{60ECD527-F157-49A9-A984-55BEB4742CD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A619867-364C-4980-83BA-3A7234790ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A619867-364C-4980-83BA-3A7234790ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A619867-364C-4980-83BA-3A7234790ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A619867-364C-4980-83BA-3A7234790ED3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60ECD527-F157-49A9-A984-55BEB4742CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60ECD527-F157-49A9-A984-55BEB4742CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60ECD527-F157-49A9-A984-55BEB4742CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60ECD527-F157-49A9-A984-55BEB4742CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3161AA17-8C82-4ABF-97A7-07990C6BE944}
+	EndGlobalSection
+EndGlobal

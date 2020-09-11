@@ -1,0 +1,12 @@
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\bin\Debug\Model.dll
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\bin\Debug\Model.pdb
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\obj\Debug\Model.dll
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\obj\Debug\Model.pdb
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\bin\Debug\Model.dll.config
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\bin\Debug\EntityFramework.dll
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\bin\Debug\EntityFramework.xml
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\LearningWeb\Learning-ASP.NET-MVC\FirstWebApp\Model\obj\Debug\Model.csproj.CopyComplete
