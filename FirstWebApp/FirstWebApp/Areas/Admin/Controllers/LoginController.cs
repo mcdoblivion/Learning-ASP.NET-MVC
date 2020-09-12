@@ -22,8 +22,8 @@ namespace FirstWebApp.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var dao = new UserDao();
-                var result = dao.Login(loginModel.UserName, loginModel.Password);
-                if (result)
+                var result = dao.Login(loginModel.UserName, Encryptor.MD5Hash(loginModel.Password));
+                if (result == 1)
                 {
                     var user = dao.GetByUserName(loginModel.UserName);
                     var userSession = new UserLogin();
@@ -32,9 +32,13 @@ namespace FirstWebApp.Areas.Admin.Controllers
                     Session.Add(CommonConst.USER_SESSION, userSession);
                     return RedirectToAction("Index", "Home");
                 }
-                else
+                if (result == 0)
                 {
-                    ModelState.AddModelError("", "User name or password is incorrect.");
+                    ModelState.AddModelError("", "User name doesn't exist!");
+                }
+                if (result == -1)
+                {
+                    ModelState.AddModelError("", "Password isn't incorrect!");
                 }
             }
             return View("Index");

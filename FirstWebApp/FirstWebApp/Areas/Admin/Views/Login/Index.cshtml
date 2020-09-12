@@ -26,7 +26,7 @@
                         <h1 class="login-title">Log in</h1>
                         @using (Html.BeginForm("Login", "Login", FormMethod.Post))
                         {
-                            @Html.ValidationSummary(false, "", "Error")
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
                             <div class="form-group">
                                 @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @autofocus = "autofocus" })
                             </div>
