@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
@@ -10,34 +11,32 @@ namespace Vidly.Controllers
 {
     public class CustomersController : Controller
     {
-        private List<Customer> customers = new List<Customer>
+        private ApplicationDbContext _context;
+
+        public CustomersController()
         {
-            new Customer {Name = "Customer 1"},
-            new Customer {Name = "Customer 2"}
-        };
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
 
         // GET: Customers
         public ActionResult Index()
         {
-            var customersViewModel = new CustomersViewModel
-            {
-                ListCustomers = customers
-            };
-            return View(customersViewModel);
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            return View(customers);
         }
 
-        [Route("customers/details/{index}")]
-        public ActionResult Details(int? index)
+        public ActionResult Details(int id)
         {
-            if (!index.HasValue)
-            {
-                index = 1;
-            }
-            if (index > customers.Count)
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+            if (customer == null)
             {
                 return new HttpNotFoundResult();
             }
-            var customer = customers.ElementAt((int)index - 1);
             return View(customer);
         }
     }
