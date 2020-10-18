@@ -2,13 +2,19 @@
     ViewBag.Title = "Movies";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model Vidly.ViewModels.MoviesViewModel
+@model List<Vidly.Models.Movie>
 
 <h2>Movies</h2>
 <table class="table table-bordered table-hover">
-    <tr><th>Movies</th></tr>
-    @foreach (var movie in Model.ListMovies)
+    <tr>
+        <th>Movies</th>
+        <th>Genre</th>
+    </tr>
+    @foreach (var movie in Model)
     {
-        <tr><td class="tab-content">@movie.Name</td></tr>
+        <tr>
+            <td class="tab-content">@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</td>
+            <td>@movie.Genre.Name</td>
+        </tr>
     }
 </table>
