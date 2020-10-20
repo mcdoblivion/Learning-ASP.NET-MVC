@@ -6,22 +6,22 @@ using Vidly.Models;
 
 namespace Vidly.ViewModels
 {
-    public class CustomerFormViewModel
+    public class MoviesFormViewModel
     {
-        public IEnumerable<MembershipType> MembershipTypes { get; set; }
-        public Customer Customer { get; set; }
+        public Movie Movie { get; set; }
+        public IEnumerable<Genre> Genres { get; set; }
 
         public string Title
         {
             get
             {
-                if (Customer != null && Customer.Id != 0)
+                if (Movie != null && Movie.Id != 0)
                 {
-                    return "Edit Customer";
+                    return "Edit Movie";
                 }
                 else
                 {
-                    return "New Customer";
+                    return "New Movie";
                 }
             }
         }
