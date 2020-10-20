@@ -6,15 +6,19 @@
 
 <h2>Movies</h2>
 <table class="table table-bordered table-hover">
-    <tr>
-        <th>Movies</th>
-        <th>Genre</th>
-    </tr>
-    @foreach (var movie in Model)
-    {
+    <thead>
         <tr>
-            <td class="tab-content">@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</td>
-            <td>@movie.Genre.Name</td>
+            <th>Movies</th>
+            <th>Genre</th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</td>
+                <td>@movie.Genre.Name</td>
+            </tr>
+        }
+    </tbody>
 </table>
