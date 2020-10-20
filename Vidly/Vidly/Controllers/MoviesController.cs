@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using Vidly.Models;
 using Vidly.ViewModels;
 
