@@ -205,6 +205,10 @@
     <Compile Include="Migrations\202010201048545_ChangeMovieReleaseDateToNullable.designer.cs">
       <DependentUpon>202010201048545_ChangeMovieReleaseDateToNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202010281635195_LimitMovieNameLength.cs" />
+    <Compile Include="Migrations\202010281635195_LimitMovieNameLength.designer.cs">
+      <DependentUpon>202010281635195_LimitMovieNameLength.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -415,6 +419,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202010201048545_ChangeMovieReleaseDateToNullable.resx">
       <DependentUpon>202010201048545_ChangeMovieReleaseDateToNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202010281635195_LimitMovieNameLength.resx">
+      <DependentUpon>202010281635195_LimitMovieNameLength.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
