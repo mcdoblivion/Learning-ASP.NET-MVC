@@ -32,6 +32,7 @@ namespace Vidly.Controllers.Api
         }
 
         // POST api/customers
+        [HttpPost]
         public Customer CreateCustomer(Customer customer)
         {
             if (!ModelState.IsValid)
